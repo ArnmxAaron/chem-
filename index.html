@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NECO GCE 2025 - Economics Questions & Answers</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Roboto+Mono:wght@500&family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* --- CORE VARIABLES (ECONOMICS THEME: Navy/Bronze) --- */
+        :root {
+            --bg-dark: #0f172a;       /* Slate 950 */
+            --bg-card: #1e293b;       /* Slate 800 */
+            --bg-header: #020617;     /* Slate 950 Darker */
+            --accent-gold: #d97706;   /* Bronze 600 */
+            --accent-light: #fbbf24;  /* Amber 400 */
+            --accent-blue: #38bdf8;   /* Sky 400 */
+            --text-main: #f8fafc;     
+            --text-muted: #94a3b8;    
+            --border-color: #334155;  
+            --whatsapp: #25D366;
+            --telegram: #0088cc;
+        }
+
+        /* --- RESET & BASE STYLES --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            /* Corrected and simplified background gradient */
+            background-image: linear-gradient(to bottom, #1e293b 0%, #0f172a 40%); 
+        }
+
+        /* --- HEADER --- */
+        header {
+            background-color: rgba(2, 6, 23, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-area h1 { font-size: 1.25rem; font-weight: 800; letter-spacing: -0.02em; }
+        .logo-area span { color: var(--accent-gold); }
+
+        .badge-date {
+            background: rgba(217, 119, 6, 0.1);
+            color: var(--accent-light);
+            border: 1px solid rgba(217, 119, 6, 0.2);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            text-align: center;
+            padding: 3rem 1.5rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 2rem;
+        }
+
+        .hero h2 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #fff, #fdba74);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem; }
+
+        /* --- NEW COMPACT SHARE UI --- */
+        .share-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .share-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .share-label {
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            transition: transform 0.2s, opacity 0.2s;
+            text-decoration: none;
+        }
+
+        .social-link:hover { transform: scale(1.1); }
+        .social-wa { background-color: var(--whatsapp); box-shadow: 0 0 10px rgba(37, 211, 102, 0.3); }
+        .social-tg { background-color: var(--telegram); box-shadow: 0 0 10px rgba(0, 136, 204, 0.3); }
+
+        .share-stats {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .stat-num { color: var(--accent-light); font-weight: 700; font-family: 'Roboto Mono', monospace; }
+
+        /* --- CONTENT STYLES --- */
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            flex-grow: 1; /* Allow content to take up remaining space */
+        }
+        
+        .section-heading {
+            color: var(--accent-gold); 
+            text-transform: uppercase; 
+            letter-spacing: 3px; 
+            font-size: 1.2rem; 
+            margin-top: 2rem;
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 0.5rem;
+            font-weight: 800;
+        }
+
+        .question-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .question-card::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 4px; height: 100%;
+            background: var(--accent-gold);
+        }
+
+        .q-header {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 1rem; padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .q-title {
+            font-size: 1.1rem; font-weight: 700; color: var(--accent-light);
+            text-transform: uppercase; letter-spacing: 0.05em;
+        }
+
+        .q-content {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.2rem; color: #e2e8f0;
+            white-space: pre-wrap; line-height: 1.6;
+        }
+
+        /* Objective Grid */
+        .obj-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .obj-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+        .obj-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.6rem 0.3rem;
+            text-align: center;
+            border-radius: 6px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 1rem;
+            border: 1px solid var(--border-color);
+            transition: background 0.2s;
+        }
+        .obj-item:hover { background: rgba(255, 255, 255, 0.1); }
+        .obj-num { color: var(--text-muted); font-size: 0.7rem; display: block; margin-bottom: 2px;}
+        .obj-ans { color: var(--accent-blue); font-weight: bold; }
+
+
+        /* Footer */
+        footer { 
+            text-align: center; 
+            padding: 2rem; 
+            border-top: 1px solid var(--border-color); 
+            color: var(--text-muted); 
+            font-size: 0.85rem; 
+            background: var(--bg-header); 
+            margin-top: auto; /* Push footer to the bottom */
+        }
+        
+        /* Highlight spans */
+        .hl { color: var(--accent-blue); font-weight: bold; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <h1>NECO GCE <span>2025</span></h1>
+        </div>
+        <div class="badge-date">
+            Available Now
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Chemistry</h2>
+        <p>GCE Private Candidate Series - Questions & Answers</p>
+        
+
+    <main class="content-container">
+
+        <h3 class="section-heading">Section A: Objective Answers</h3>
+        <div class="obj-section">
+            <p style="color: var(--text-main); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">NECO GCE Chemistry Objective Answer Keys (1-50)</p>
+            <div class="obj-grid">
+                <div class="obj-item"><span class="obj-num">1</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">2</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">3</span><span class="obj-ans">E</span></div>
+                <div class="obj-item"><span class="obj-num">4</span><span class="obj-ans">E</span></div>
+                <div class="obj-item"><span class="obj-num">5</span><span class="obj-ans">B</span></div>
+                <div class="obj-item"><span class="obj-num">6</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">7</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">8</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">9</span><span class="obj-ans">E</span></div>
+                <div class="obj-item"><span class="obj-num">10</span><span class="obj-ans">E</span></div>
+                
+                <div class="obj-item"><span class="obj-num">11</span><span class="obj-ans">E</span></div>
+                <div class="obj-item"><span class="obj-num">12</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">13</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">14</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">15</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">16</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">17</span><span class="obj-ans">E</span></div>
+                <div class="obj-item"><span class="obj-num">18</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">19</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">20</span><span class="obj-ans">D</span></div>
+
+                <div class="obj-item"><span class="obj-num">21</span><span class="obj-ans">E</span></div>
+                <div class="obj-item"><span class="obj-num">22</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">23</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">24</span><span class="obj-ans">B</span></div>
+                <div class="obj-item"><span class="obj-num">25</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">26</span><span class="obj-ans">B</span></div>
+                <div class="obj-item"><span class="obj-num">27</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">28</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">29</span><span class="obj-ans">E</span></div>
+                <div class="obj-item"><span class="obj-num">30</span><span class="obj-ans">A</span></div>
+
+                <div class="obj-item"><span class="obj-num">31</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">32</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">33</span><span class="obj-ans">E</span></div>
+                <div class="obj-item"><span class="obj-num">34</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">35</span><span class="obj-ans">B</span></div>
+                <div class="obj-item"><span class="obj-num">36</span><span class="obj-ans">E</span></div>
+                <div class="obj-item"><span class="obj-num">37</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">38</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">39</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">40</span><span class="obj-ans">C</span></div>
+
+                <div class="obj-item"><span class="obj-num">41</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">42</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">43</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">44</span><span class="obj-ans">B</span></div>
+                <div class="obj-item"><span class="obj-num">45</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">46</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">47</span><span class="obj-ans">E</span></div>
+                <div class="obj-item"><span class="obj-num">48</span><span class="obj-ans">E</span></div>
+                <div class="obj-item"><span class="obj-num">49</span><span class="obj-ans">D</span></div>
+                <div class="obj-item"><span class="obj-num">50</span><span class="obj-ans">D</span></div>
+                
+                <div class="obj-item"><span class="obj-num">51</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">52</span><span class="obj-ans">E</span></div>
+                <div class="obj-item"><span class="obj-num">53</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">54</span><span class="obj-ans">E</span></div>
+                <div class="obj-item"><span class="obj-num">55</span><span class="obj-ans">C</span></div>
+                <div class="obj-item"><span class="obj-num">56</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">57</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">58</span><span class="obj-ans">A</span></div>
+                <div class="obj-item"><span class="obj-num">59</span><span class="obj-ans">B</span></div>
+                <div class="obj-item"><span class="obj-num">60</span><span class="obj-ans">C</span></div>
+            </div>
+        </div>
+
+
+        <h3 class="section-heading">Section B: Theory Answers</h3>
+        <p style="font-family: 'Patrick Hand', cursive; font-size: 1.1rem; color: var(--text-muted);">
+            _INSTRUCTION: ANSWER FOUR(4) QUESTIONS ONLY_
+        </p>
+
+        <div class="question-card">
+            <div class="q-header"><div class="q-title">Question 1 - Chemical Kinetics & Calculations</div></div>
+            <div class="q-content">
+(1ai)
+<span class="hl">Activation energy</span> is the minimum energy required to activate atoms or molecules for a chemical reaction to occur.
+
+(1aii)
+The balanced chemical equation for the reaction is:
+$$Zn(s) + H₂SO₄(aq) \rightarrow ZnSO₄(aq) + H₂(g)$$
+
+(1aiii)
+Convert temperature to kelvin: $100 + 273.15 = 373.15K$
+Entropy change $(\Delta S) = 318.2 J K⁻¹ mol⁻¹$
+$$\Delta H = T \times \Delta S$$
+$$\Delta H = 373 \times 318.2$$
+$$\Delta H = 118,736.33 J mol⁻¹$$
+Convert to $kJ mol⁻¹$:
+$$\Delta H = 118.74 kJ mol⁻¹$$
+
+
+(1bi)
+(i) <span class="hl">Magnetic separation:</span> use a magnet to remove the iron filings.
+(ii) <span class="hl">Sublimation:</span> gently heat the mixture; iodine sublimes leaving iron behind.
+
+(1bii)
+A <span class="hl">physical change</span> alters only physical properties like shape without forming new substances, while a <span class="hl">chemical change</span> forms new substances with altered composition.
+
+(1biii)
+I. Physical changes: melting of ice; dissolving sugar in water.
+II. Chemical changes: rusting of iron; combustion of methane.
+
+(1ci)
+The <span class="hl">periodic law</span> states that the properties of elements are periodic functions of their atomic numbers.
+
+(1cii)
+Molar mass of $Mg(NO₃)₂ = 24 + 2(14) + 6(16) = 148 gmol⁻¹$
+Mass of nitrogen = $2 \times 14 = 28g$
+$$\% N = \frac{28}{148} \times 100 = 18.92\%$$
+
+(1ciii)
+(i) <span class="hl">Calcium chloride ($CaCl₂$)</span>
+(ii) <span class="hl">Calcium oxide (quicklime, $CaO$)</span>
+
+(1civ)
+(i) <span class="hl">Phenolphthalein</span>
+(ii) <span class="hl">Methyl orange</span>
+
+            </div>
+        </div>
+        <div class="question-card">
+            <div class="q-header"><div class="q-title">Question 2 - Nitrogen, Solutions, and Electrochemistry</div></div>
+            <div class="q-content">
+(2ai)
+Nitrogen is chemically <span class="hl">inert</span> due to its strong triple covalent bond in $N₂$ molecules.
+
+(2aii)
+(i) Used in the manufacture of <span class="hl">ammonia for fertilizers</span> via the Haber process.
+(ii) Employed as an <span class="hl">inert atmosphere</span> to prevent oxidation in food preservation and welding.
+
+(2aiii)
+<span class="hl">Butan-1-ol</span>
+
+(2aiv)
+(i) <span class="hl">Amino group ($–NH₂$)</span>.
+(ii) <span class="hl">Carboxyl group ($–COOH$)</span>.
+
+
+(2bi)
+A <span class="hl">standard solution</span> is a solution of accurately known concentration used in titrations for quantitative analysis.
+
+
+(2bii)
+(i) Rinse burette with the solution to be used before filling.
+(ii) Read the <span class="hl">meniscus at eye level</span> against a white background to avoid parallax error.
+(iii) Ensure no air bubbles are trapped in the burette tip.
+
+(2biii)
+$$2Kl(aq) + Cl₂(g) \rightarrow 2KCl(aq) + l₂(aq)$$
+
+(2ci)
+<span class="hl">Faraday's Second Law of electrolysis</span> states that when the same quantity of electricity is passed through different electrolytes, the relative number of moles of the elements discharged are inversely proportional to the charges on the ions of the elements.
+
+(2cii)
+Charge passed($Q$) $= I \times t = 5 \times (2 \times 60) = 5 \times 120 = 600C$
+
+Moles of electrons $= \frac{Q}{F} = \frac{600}{96500} = 6.22 \times 10⁻³ mol$
+
+At the anode: $2 H₂O \rightarrow O₂ + 4H⁺ + 4e⁻$, so $4e⁻$ produce $1 mol O₂$.
+
+Moles of $O₂ = \frac{6.22 \times 10⁻³}{4} = 1.55 \times 10⁻³ mol$
+
+Volume at STP = moles $\times 22.4 dm³ mol⁻¹ = 1.55 \times 10⁻³ \times 22.4$
+Volume at STP $= 0.035dm³ (35cm³)$.
+
+(2di)
+I. In a water molecule: <span class="hl">Polar covalent bond</span>
+II. Between water molecules: <span class="hl">Hydrogen bond</span>
+
+(2dii)
+I. Hydrogen from water gas: <span class="hl">Water–gas shift process</span>.
+II. Ammonia: <span class="hl">Haber process</span>.
+            </div>
+        </div>
+
+        <div class="question-card">
+            <div class="q-header"><div class="q-title">Question 3 - Hard Water, Sulphur, and Molar Calculations</div></div>
+            <div class="q-content">
+(3ai)
+(i) <span class="hl">Calcium chloride ($CaCl₂$)</span>
+(ii) <span class="hl">Magnesium sulfate ($MgSO₄$)</span>
+
+
+(3aii)
+(i) <span class="hl">Detergents</span> work effectively in both hard and soft water, while <span class="hl">soap</span> forms scum in hard water.
+(ii) Detergents are generally more soluble and have better lathering properties in cold water compared to soap.
+
+
+(3aiii)
+When the stable form of sulfur is heated above approximately 370K, it transitions into the <span class="hl">monoclinic form of sulfur</span>, a different crystalline structure.
+
+(3aiv)
+(i) Manufacture of <span class="hl">sulphuric acid</span>.
+(ii) <span class="hl">Vulcanization of rubber</span>.
+
+
+(3bi)
+I. Ethanoic acid, Citric acid
+II. Citrus fruits, Vinegar
+III. Reaction of an acid with a metal, Reaction of an acid with a base.
+
+(3bii)
+I. KOH: Used in the manufacture of <span class="hl">soft soap</span>.
+II. $NH₄OH$: Used in removing <span class="hl">grease and stains</span> in household cleaning.
+III. Al: Used in making <span class="hl">cooking utensils</span> and overhead cables.
+
+(3ci)
+A <span class="hl">suspension</span> is a heterogeneous mixture in which insoluble solid particles are dispersed in a liquid and can settle on standing.
+
+
+(3cii)
+(i) Used in <span class="hl">car batteries</span> and steam irons.
+(ii) Used in the laboratory for preparing solutions and reagents.
+
+(3ciii)
+Volume ($V$) $= 200cm³ = \frac{200}{1000} = 0.200dm³$.
+Concentration ($C$) $= 0.10 mol\cdot dm⁻³$.
+
+Moles of $Na₂CO₃ = C \times V = 0.10 \times 0.200 = 0.0200 mol$.
+
+Molar mass $Na₂CO₃ = 2(23) + 12 + 3(16) = 106 g\cdot mol⁻¹$.
+
+Mass = moles $\times$ molar mass $= 0.0200 \times 106 = 2.12g$.
+            </div>
+        </div>
+
+        <div class="question-card">
+            <div class="q-header"><div class="q-title">Question 4 - Flames, Nitrogen Cycle, and Gas Laws</div></div>
+            <div class="q-content">
+(4ai)
+A <span class="hl">flame</span> is the visible, gaseous region of a combustion reaction where fuel vapour and oxidant react, producing heat, light and reaction products.
+
+
+(4aii)
+(i) <span class="hl">Luminous flame:</span> bright, yellow, incomplete combustion.
+(ii) <span class="hl">Non-luminous flame:</span> hot, blue, complete combustion.
+
+
+(4aiii)
+<span class="hl">Nitrogen</span> (about 78%) and <span class="hl">Oxygen</span> (about 21%), also small amounts of argon and other trace gases.
+
+
+(4bi)
+X: <span class="hl">Ammonification</span>.
+Y: <span class="hl">Nitrification</span>.
+Z: <span class="hl">Denitrification</span>.
+
+(4bii)
+(i) It is a <span class="hl">colourless and odourless gas</span>.
+(ii) It is less dense than air
+
+(4ci)
+(i) <span class="hl">Iodine</span>
+(ii) <span class="hl">Dry ice</span>
+
+
+(4cii)
+(i) Boiling point determination.
+(ii) Chromatography.
+
+(4ciii)
+I. Mining: <span class="hl">Froth flotation</span>.
+II. Petroleum: <span class="hl">Fractional distillation</span>.
+III. Water purification: <span class="hl">Filtration</span>.
+
+(4di)
+<span class="hl">Graham's Law of Diffusion</span> states that the rate of diffusion (or effusion) of a gas is inversely proportional to the square root of its molar mass, provided the temperature and pressure are constant.
+
+(4dii)
+Using Graham’s Law of Diffusion:
+$$\frac{t_{Cl₂}}{t_{Q}} = \sqrt{\frac{M_{Cl₂}}{M_{Q}}}$$
+
+Given:
+$t_{Q} = 100$ seconds
+$t_{Cl₂} = 90$ seconds
+$M_{Cl₂} = 71g/mol$
+
+Substitute the values:
+$$\frac{90}{100} = \sqrt{\frac{71}{M_{Q}}}$$
+$$0.9 = \sqrt{\frac{71}{M_{Q}}}$$
+$$0.9^2 = \frac{71}{M_{Q}}$$
+$$0.81 = \frac{71}{M_{Q}}$$
+$$M_{Q} = \frac{71}{0.81}$$
+$$M_{Q} = 87.65g/mol$$
+            </div>
+        </div>
+
+        <div class="question-card">
+            <div class="q-header"><div class="q-title">Question 5 - Metals, Oxygen, and Vapour Density</div></div>
+            <div class="q-content">
+(5ai)
+(i) They are good <span class="hl">conductors of heat and electricity</span>.
+(ii) They are <span class="hl">malleable and ductile</span>.
+
+(5aii)
+(i) <span class="hl">Thermal cracking</span>.
+(ii) <span class="hl">Catalytic cracking</span>.
+
+(5aiii)
+$$MgSO₄(aq) + 2NaOH(aq) \rightarrow Mg(OH)₂(s) + Na₂SO₄(aq)$$
+
+(5aiv)
+(i) It is a <span class="hl">Colourless and odourless gas</span>.
+(ii) It is <span class="hl">lightly soluble in water</span>.
+
+
+(5bi)
+<span class="hl">Metals</span> are elements that readily lose electrons to form positive ions and have characteristic properties such as conductivity, malleability, and metallic lustre.
+
+
+(5bii)
+I. Uses of oxygen:
+-Used in <span class="hl">welding and cutting metals</span>.
+-Used in hospitals for <span class="hl">respiration of patients</span>.
+
+II. Uses of copper:
+-Making <span class="hl">electrical wires</span>.
+-Making alloys such as bronze and brass.
+
+(5biii)
+Given: Molar Mass of $NO₂ = 55 g/mol$
+
+$$\text{Vapour density} = \frac{\text{Molar mass}}{2}$$
+$$\text{Vapour density} = \frac{55}{2} = 27.5$$
+
+(5c)
+I. Substances produced from cast iron:
+-Steel
+-Wrought iron
+
+II. Ores of iron:
+-Haematite ($Fe₂O₃$)
+-Magnetite ($Fe₃O₄$)
+
+III. Conditions necessary for rusting:
+-Presence of <span class="hl">oxygen</span>
+-Presence of <span class="hl">water</span>
+
+IV. Methods of preventing rusting:
+-Painting
+-Galvanization
+            </div>
+        </div>
+
+        <div class="question-card">
+            <div class="q-header"><div class="q-title">Question 6 - Carbon Cycle, Alkanes, and Ideal Gas Law</div></div>
+            <div class="q-content">
+(6ai)
+(i) <span class="hl">Photosynthesis</span> by green plants
+(ii) <span class="hl">Absorption of $CO₂$ by the oceans</span> (dissolution)
+
+(6aii)
+$$CO(g) + NaOH(aq) \rightarrow HCOONa(aq)$$
+
+(6aiii)
+It is a <span class="hl">colourless, odourless gas</span> that is only slightly soluble in water.
+
+(6aiv)
+(i) Used as <span class="hl">fuel</span> for cooking and heating
+(ii) Used as <span class="hl">adsorbent</span> in water‑filtration and gas masks
+
+(6bi)
+I. Equation for the reaction:
+$$C₅H₁₂(l) + Cl₂(g) \rightarrow C₅H₁₁Cl(l) + HCl(g)$$
+
+II. Products: <span class="hl">Chloropentane</span> ($C₅H₁₁Cl$) and <span class="hl">hydrogen chloride</span> ($HCl$)
+
+III. Role of light: <span class="hl">Provides the energy to split $Cl₂$ into chlorine radicals</span>, initiating the chain reaction.
+
+(6bii)
+<span class="hl">Polymerisation</span> is the chemical process in which small molecules called monomers join together to form a large molecule (a polymer), either by addition polymerisation or condensation polymerisation.
+
+(6biii)
+(i) <span class="hl">Coke</span>
+(ii) <span class="hl">Coal gas</span>
+(iii) <span class="hl">Coal tar</span>
+
+(6ci)
+(i) <span class="hl">Inorganic (metal) peroxides</span>, e.g., sodium peroxide $Na₂O₂$
+(ii) <span class="hl">Organic peroxides</span>, e.g., benzoyl peroxide
+
+(6cii)
+Electrolysis of water
+$$2H₂O \rightarrow 2H₂ + O₂$$
+
+(6ciii)
+Given:
+$P = 2.0atm$
+$V = 2.7dm³$
+$T = -4°C = 269.15K$
+$R = 0.082 atm\cdot dm³K⁻¹mol⁻¹$
+
+Using the Ideal Gas Law $PV = nRT$:
+$$n = \frac{PV}{RT}$$
+$$n = \frac{(2 \times 2.7)}{(0.082 \times 269.15)}$$
+$$n = \frac{5.4}{22.07}$$
+$$n = 0.245mol$$
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy 2025 National Examinations Council (NECO). All rights reserved.
+    </footer>
+
+    <script>
+        // --- SHARE COUNTER LOGIC ---
+        const shareCountEl = document.getElementById('share-count');
+        const shareBtns = document.querySelectorAll('.social-link');
+        
+        // Initialize with realistic high number since exam passed
+        let currentShares = localStorage.getItem('econs_neco_shares')
+                            ? parseInt(localStorage.getItem('econs_neco_shares'))
+                            : 4500;
+
+        // Update display immediately
+        shareCountEl.innerText = currentShares.toLocaleString();
+
+        // Function to increment
+        function incrementShare() {
+            currentShares++;
+            shareCountEl.innerText = currentShares.toLocaleString();
+            localStorage.setItem('econs_neco_shares', currentShares);
+        }
+
+        // Add click listeners
+        shareBtns.forEach(btn => {
+            btn.addEventListener('click', incrementShare);
+        });
+    </script>
+</body>
+</html>
